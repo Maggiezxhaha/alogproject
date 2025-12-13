@@ -1,0 +1,22 @@
+dimensions:
+  accuracy:
+    weight: 0.25
+  efficiency:
+    weight: 0.15
+  safety:
+    weight: 0.15
+  stability:
+    weight: 0.10
+  capability:
+    weight: 0.15
+  adaptability:
+    weight: 0.10
+  autonomy:
+    weight: 0.05
+  learnability:
+    weight: 0.05
+
+hard_thresholds:
+  capability: 0.0020
+  stability: 0.0025
+  safety: 0.0020

@@ -1,0 +1,10 @@
+algo_name: ResNet18_CIFAR10_8dims
+task: classification
+dataset: cifar10
+
+backend: backends.torchvision_adapter.TorchVisionClassificationAlgo
+
+model:
+  name: resnet18
+  checkpoint: checkpoints/cifar10/resnet18_cifar10_baseline.pth
+  num_classes: 10

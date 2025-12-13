@@ -1,0 +1,5 @@
+datasets:
+  cifar10:
+    type: classification
+    num_classes: 10
+    root: "E:/QY/coding/algo_datasets/classification/cifar10/raw"
