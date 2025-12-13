@@ -1,0 +1,6 @@
+name: coco_mask
+root: data/coco/val2017
+ann_file: data/coco/annotations/instances_val2017.json
+collate: segmentation
+task: segmentation
+subset: 50
