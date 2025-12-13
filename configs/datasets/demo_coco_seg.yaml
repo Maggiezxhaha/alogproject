@@ -1,0 +1,10 @@
+name: coco_mask
+root: data/coco/val2017
+ann_file: data/coco/annotations/instances_val2017.json
+collate: segmentation
+task: segmentation
+subset: 50
+train_root: data/coco/train2017
+train_ann_file: data/coco/annotations/instances_train2017.json
+val_root: data/coco/val2017
+val_ann_file: data/coco/annotations/instances_val2017.json

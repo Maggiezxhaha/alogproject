@@ -1,0 +1,4 @@
+name: mobilenet_v3_small
+num_classes: 10
+pretrained: true
+weights: null
