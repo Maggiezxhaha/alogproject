@@ -1,0 +1,40 @@
+batch_size: 8
+num_workers: 0
+protocol:
+  efficiency:
+    max_batches: 5
+  stability:
+    noise_std: 0.05
+    max_batches: 3
+  safety:
+    max_batches: 3
+  capability_boundary:
+    max_batches: 5
+  adaptability:
+    dataset_overrides:
+      transform: null
+  autonomy:
+    threshold: 0.9
+    max_batches: 3
+  learnability:
+    subset: 128
+    max_batches: 3
+safety:
+  attack:
+    name: pgd
+  eps: 0.0313725
+  alpha: 0.0078431
+  steps: 10
+  random_start: true
+  norm: linf
+  targeted: false
+ahp:
+  weights:
+    accuracy_score: 0.3
+    efficiency_score: 0.1
+    stability_score: 0.1
+    safety_score: 0.2
+    capability_boundary_score: 0.1
+    adaptability_score: 0.1
+    autonomy_score: 0.05
+    learnability_score: 0.05
