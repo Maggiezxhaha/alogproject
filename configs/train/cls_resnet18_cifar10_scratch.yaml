@@ -1,0 +1,21 @@
+# From-scratch training preset for CIFAR-10 ResNet-18
+preset: scratch
+epochs: 100
+batch_size: 128
+val_batch_size: 128
+num_workers: 4
+optimizer:
+  name: sgd
+  lr: 0.1
+  momentum: 0.9
+  weight_decay: 0.0005
+scheduler:
+  name: cosine
+  t_max: 100
+monitor: val_accuracy
+monitor_mode: max
+train_split: train
+val_split: val
+seed: 42
+amp: true
+eval_after_train: false

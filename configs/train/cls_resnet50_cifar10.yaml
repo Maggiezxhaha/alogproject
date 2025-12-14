@@ -1,0 +1,21 @@
+# Finetune preset (pretrained=True) for CIFAR-10 ResNet-50
+preset: finetune
+epochs: 40
+batch_size: 128
+val_batch_size: 128
+num_workers: 4
+optimizer:
+  name: sgd
+  lr: 0.01
+  momentum: 0.9
+  weight_decay: 0.0005
+scheduler:
+  name: cosine
+  t_max: 40
+monitor: val_accuracy
+monitor_mode: max
+train_split: train
+val_split: val
+seed: 42
+amp: true
+eval_after_train: false

@@ -1,0 +1,4 @@
+name: ssd300_vgg16
+num_classes: 91
+pretrained: true
+weights: null
