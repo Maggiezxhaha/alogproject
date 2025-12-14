@@ -1,0 +1,8 @@
+name: cifar10
+root: ./checkpoints
+split: test
+train_split: train
+val_split: test
+download: true
+task: classification
+subset: 256

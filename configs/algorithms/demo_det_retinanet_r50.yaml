@@ -1,0 +1,4 @@
+name: retinanet_resnet50
+num_classes: 91
+pretrained: true
+weights: null
