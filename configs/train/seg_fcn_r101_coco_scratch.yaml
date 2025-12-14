@@ -1,0 +1,20 @@
+# From-scratch COCO FCN ResNet-101
+preset: scratch
+epochs: 80
+batch_size: 8
+val_batch_size: 8
+num_workers: 4
+optimizer:
+  name: adamw
+  lr: 0.00015
+  weight_decay: 0.01
+scheduler:
+  name: cosine
+  t_max: 80
+monitor: val_miou
+monitor_mode: max
+train_split: train
+val_split: val
+seed: 42
+amp: true
+eval_after_train: false
