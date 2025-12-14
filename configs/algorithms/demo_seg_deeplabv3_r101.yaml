@@ -1,0 +1,4 @@
+name: deeplabv3_resnet101
+num_classes: 21
+pretrained: true
+weights: null

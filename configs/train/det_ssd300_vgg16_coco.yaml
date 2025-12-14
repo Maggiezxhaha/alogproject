@@ -1,0 +1,22 @@
+# Finetune COCO SSD300 VGG16
+preset: finetune
+epochs: 12
+batch_size: 4
+val_batch_size: 4
+num_workers: 4
+optimizer:
+  name: sgd
+  lr: 0.0025
+  momentum: 0.9
+  weight_decay: 0.0005
+scheduler:
+  name: multistep
+  milestones: [8, 11]
+  gamma: 0.1
+monitor: val_loss
+monitor_mode: min
+train_split: train
+val_split: val
+seed: 42
+amp: true
+eval_after_train: false
